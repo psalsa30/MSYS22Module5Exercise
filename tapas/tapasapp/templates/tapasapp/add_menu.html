@@ -1,6 +1,18 @@
 {% extends 'tapasapp/base.html' %}
 {% load static %}
 
+
+<!--This will show the sidebar-->
+
+<ul class="side_bar">
+
+    {% block sidebar %}
+    <!--Return to actual main screen-->
+    <li><a href="{% url 'view_menu' %}">Back to main </a></li>
+    {% endblock %}
+</ul>
+
+<!--This is showing the entire adding menu-->
                     {% block content %}
 
                     <div class="w-75">

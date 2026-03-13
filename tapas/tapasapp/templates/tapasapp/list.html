@@ -2,7 +2,17 @@
 {% load static %}
 
 
+<ul class="side_bar">
 
+    {% block sidebar %}
+    <!--These are placeholder links only-->
+    <li><a href="{% url 'view_wines' %}">View Wines</a></li>
+    <li><a href="{% url 'view_large_dishes' %}">View Large Dishes</a></li>
+    <li><a href="{% url 'view_coursed_menus' %}">View Coursed Menus</a></li>
+    {% endblock %}
+</ul>
+
+<!--This shows the entire list of menu-->
                 {% block content %}
                 <div class="col-12">
                     <table class="table table-striped">
@@ -26,4 +36,6 @@
                 </div>
                 {% endblock %}
 
-            
+<!--This will show the side menu-->
+
+<h1>Side Menu</h1>

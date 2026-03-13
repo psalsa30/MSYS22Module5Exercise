@@ -16,7 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from tapasapp import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('tapasapp.urls')),
+    path('add_menu/', views.add_menu, name='add_menu'),
 ]

@@ -14,3 +14,12 @@ def view_menu(request):
 
 def add_menu(request):
     return render(request, 'tapasapp/add_menu.html')
+
+def view_wines(request):
+    return render(request, 'tapasapp/view_wines.html')
+
+def view_large_dishes(request):
+    return render(request, 'tapasapp/view_large_dishes.html')
+
+def view_coursed_menus(request):
+    return render(request, 'tapasapp/view_coursed_menus.html')

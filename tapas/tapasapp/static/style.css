@@ -18,3 +18,15 @@
     text-decoration: none;
     color: black;
 }
+
+.button {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 4px;
+    padding: 6px;
+    text-decoration: none;
+}

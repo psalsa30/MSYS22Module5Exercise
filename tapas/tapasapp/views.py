@@ -23,3 +23,6 @@ def view_large_dishes(request):
 
 def view_coursed_menus(request):
     return render(request, 'tapasapp/view_coursed_menus.html')
+
+def button(request):
+    return render(request, 'tapasapp/button.html')
